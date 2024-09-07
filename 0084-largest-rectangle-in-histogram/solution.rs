@@ -6,7 +6,7 @@ impl Solution {
         let mut max_area: i32 = 0;
         let mut stack: Vec<usize> = Vec::with_capacity(n);
 
-    for i in 0..n {
+        for i in 0..n {
             while let Some(&top) = stack.last() {
                 if heights[i] < heights[top] {
                     stack.pop();
